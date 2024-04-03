@@ -11,7 +11,7 @@
 ## Structure
 In a RESTful API, endpoints (URLs) define the structure of the API and how end users access data from our application using the HTTP methods - GET, POST, PUT, DELETE. Endpoints should be logically organized around _collections_ and _elements_, both of which are resources.
 
-In our case, we have one single resource, `destinations`, so we will use the following URLS - `/destinations/` and `/movies/<id>` for collections and elements, respectively:
+In our case, we have one single resource, `destinations`, so we will use the following URLS - `/destinations/` and `/destinations/<id>` for collections and elements, respectively:
 
 Endpoint |HTTP Method | CRUD Method | Result
 -- | -- |-- |--
@@ -88,7 +88,7 @@ and we will get a new access token
 
 
 The API has some restrictions:
--   The movies are always associated with a creator (user who created it).
+-   The destinations are always associated with a creator (user who created it).
 -   Only authenticated users may create and see movies.
 -   Only the creator of a movie may update or delete it.
 -   The API doesn't allow unauthenticated requests.
