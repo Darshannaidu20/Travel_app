@@ -90,6 +90,6 @@ and we will get a new access token
 The API has some restrictions:
 -   The destinations are always associated with a creator (user who created it).
 -   Only authenticated users may create and see movies.
--   Only the creator of a movie may update or delete it.
+-   Only the creator of a destinations may update or delete it.
 -   The API doesn't allow unauthenticated requests.
 
